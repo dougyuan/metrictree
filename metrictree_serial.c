@@ -140,27 +140,27 @@ Tree* build_tree(double *points, int *ids, int n, int d)
     return node;
 }
 
-// Return vantage-point subtree with points inside radius
+// Return subtree with points inside radius
 Tree* getInner(Tree* T) {
     return T->inner;
 }
 
-// Return vantage-point subtree with points outside radius
+// Return subtree with points outside radius
 Tree* getOuter(Tree* T) {
     return T->outer;
 }
 
-// Return median of distances to vantage point
+// Return median of distances to start point
 double getMD(Tree* T) {
     return T->md;
 }
 
-// Return the coordinates of the vantage point
+// Return the coordinates of the start point
 double* getVP(Tree* T) {
     return T->vp;
 }
 
-// Return the index of the vantage point
+// Return the index of the start point
 int getIDX(Tree* T) {
     return T->idx;
 }
